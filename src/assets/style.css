@@ -1,0 +1,18 @@
+.dusplay_en {
+  font-family: "Paytone One";
+}
+.object-fit {
+  object-fit: cover;
+}
+.black_bg_color {
+  background: #000;
+}
+.black_color {
+  color: #000;
+}
+p {
+  margin: 0;
+}
+h1 {
+  color: red;
+}
