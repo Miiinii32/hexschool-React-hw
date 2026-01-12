@@ -1,16 +1,15 @@
-# React + Vite
+# HexSchool React 2025 課程作業
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## w2 功能介紹
 
-Currently, two official plugins are available:
+1. 串接登入和後台產品列表 api
+2. 成功登入後將 token 存在 cookie 裡
+3. 後台所有需要 token 驗證都會在載入時驗證 token，判斷直接登入或返回登入頁
+4. 點擊產品列表的查看，可以查看訂單詳細頁
+5. 所有頁面油 router 分頁
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 使用技能
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. bootStrap, axios
+2. React useState, useEffect. useRef
+3. React router
