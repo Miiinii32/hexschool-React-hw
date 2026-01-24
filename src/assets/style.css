@@ -13,3 +13,18 @@
 p {
   margin: 0;
 }
+.product_list th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  vertical-align: middle;
+}
+.product_list td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  vertical-align: middle;
+}
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+}
