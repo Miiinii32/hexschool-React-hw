@@ -1,4 +1,4 @@
-function HomePage() {
+function Home() {
   return (
     <>
       <h1>這是前台首頁</h1>
@@ -6,4 +6,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

@@ -1,14 +1,38 @@
-import Admin_Login from "../pages/Admin_Login";
-import Admin_products from "../pages/Admin_products";
-import HomePage from "../pages/Homepage";
-// import WrongPage from "../pages/WrongPage";
-
 import { createHashRouter } from "react-router-dom";
+import Admin_Login from "../pages/Admin_login";
+import Admin_products from "../pages/Admin_products";
+import Home from "../pages/Home";
+import Products from "../pages/Products";
+import WrongPage from "../pages/WrongPage";
+import FrontLayout from "../pages/FrontLayout";
+import SingleProduct from "../pages/SingleProduct";
+import Carts from "../pages/Carts";
 
 const routers = [
   {
     path: "/",
-    element: <HomePage />,
+    element: <FrontLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+        children: [
+          {
+            path: ":id",
+            element: <SingleProduct />,
+          },
+        ],
+      },
+
+      {
+        path: "cart",
+        element: <Carts />,
+      },
+    ],
   },
   {
     path: "/admin/login",
@@ -18,10 +42,10 @@ const routers = [
     path: "/admin/products",
     element: <Admin_products />,
   },
-  //   {
-  //     path: "*",
-  //     element: <WrongPage />,
-  //   },
+  {
+    path: "*",
+    element: <WrongPage />,
+  },
 ];
 
 const router = createHashRouter(routers);
